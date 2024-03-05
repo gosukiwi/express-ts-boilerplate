@@ -61,13 +61,9 @@ app.use(function (
 // initialize app
 const initialize = (): void => {
   const port = process.env.PORT;
-  const host =
-    typeof process.env.HOST === "string"
-      ? process.env.HOST
-      : "http://localhost";
 
   app.listen(port, () => {
-    console.log(`⚡️ [SERVER]: Express is running at ${host}:${port}`);
+    console.log(`⚡️ [SERVER]: Express is running at http://localhost:${port}`);
   });
 };
 
