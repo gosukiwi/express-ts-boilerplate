@@ -4,7 +4,8 @@ This is a bare-bones boilerplate app containing:
 
 - [Express](https://expressjs.com) - with [Handlebars](https://handlebarsjs.com)
 - [Typescript](https://www.typescriptlang.org)
-- [Jest](https://jestjs.io/docs/getting-started)
+- [Jest](https://jestjs.io/docs/getting-started) - with
+  [supertest](https://www.npmjs.com/package/supertest) for route testing
 - [Prettier](https://prettier.io)
 - [ESLint](https://eslint.org) - with the [Standard](https://github.com/standard/eslint-config-standard) configuration
 - [Dotenv](https://www.npmjs.com/package/dotenv)
@@ -44,3 +45,6 @@ And run it with:
 The Dockerfile will take care of copying over the `public`, `views` and
 `.env.production` files to your container, as well as the compiled Typescript
 files.
+
+When running as a Docker container, the port will be set to `3000`, you can
+then map this to whatever port you need to expose.
